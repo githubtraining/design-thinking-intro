@@ -1,9 +1,34 @@
-This is the description we show on the course page [here](https://lab.github.com/githubtraining/design-thinking-phase-one-empathy). This first paragraph will be featured at the top of the page so make it great.
-​
+# Course description
+**Design Thinking** is human-centric. It puts people first, before thinking about technology, to enable them to achieve more.  According to Tim Brown, CEO of IDEO, Design Thinking is "a human-centered approach to innovation" that allows people across any industry to deliver stronger and more meaningful - even revolutionary - products.
 
-​
-Be sure to tell the learner about the technology you are teaching, why they should learn it, how they can use it, and what you will teach them.
-​
+**Design Thinking: Phase One - Empathy** is part one in a learning path that will cover the five commonly recognized phases of Design Thinking and how to apply them to software engineering and other technical projects.  Each course may be taken as a stand-alone resource, but to get the greatest benefit from the material it's recommended that you work through the learning path in order.
 
+# What you'll learn
 
-Include information on how they can reach you for questions about the content or course. 
+We'll answer common questions like:
+- What is Design Thinking and how does it apply to technical projects?
+- What are the core principles of Design Thinking?
+- What are the five commonly recognized phases of Design Thinking?
+- How can we use Empathy to develop more innovative solutions?
+
+And when you're done you'll be able to:
+- Understand How Design Thinking enables more creative and innovative solutions.
+- Understand how Design Thinking applies to the process of Software Development, particularly in conjunction with Agile methodologies.
+- Use Empathy as a tool for envisioning and defining more meaningful solutions.
+
+# What you'll build
+- TBD
+
+![image](https://octodex.github.com/stormtroopocat/)
+
+- Completed [source repository](https://github.com/githubtraining/design-thinking-phase-one-empathy/)
+
+# Prerequisites
+None. This course is a great introduction to Design Thinking for anyone involved in technical projects.
+
+# Projects used
+TBD
+
+# Audience
+
+New developers, students, managers, teams
