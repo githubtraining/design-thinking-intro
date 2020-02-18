@@ -18,8 +18,9 @@ And when you're done you'll be able to:
 
 # What you'll build
 - TBD
-
-![image](https://user-images.githubusercontent.com/38021615/74766565-2f197600-523a-11ea-9639-e22513cf6e6e.png)
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/38021615/74766565-2f197600-523a-11ea-9639-e22513cf6e6e.png" width="250" height="250">
+</p>
 
 - Completed [source repository](https://github.com/githubtraining/design-thinking-phase-one-empathy/)
 
