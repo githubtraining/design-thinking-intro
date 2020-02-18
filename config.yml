@@ -5,6 +5,19 @@ description: >-
 template:
   repo: design-thinking-phase-one-empathy-template
   name: design-thinking-phase-one-empathy
+preferences:
+  - type: radio
+    name: teamRole
+    label: Select your role
+    description: Select your role to see tailored content.
+    options:
+      - label: Developer
+        value: developer
+      - label: Project Manager
+        value: pm
+      - label: No specific role
+        value: all
+        selected: true
 before:
   - type: createIssue
     title: Welcome!
