@@ -1,7 +1,7 @@
 # Course description
 **Design Thinking** is human-centric. It puts people first, before thinking about technology, to enable them to achieve more.  According to Tim Brown, CEO of IDEO, Design Thinking is "a human-centered approach to innovation" that allows people across any industry to deliver stronger and more meaningful - even revolutionary - products.
 
-**Design Thinking: Phase One - Empathy** is part one in a learning path that will cover the five commonly recognized phases of Design Thinking and how to apply them to software engineering and other technical projects.  Each course may be taken as a stand-alone resource, but to get the greatest benefit from the material it's recommended that you work through the learning path in order.
+**Design Thinking: Phase One - Empathize** is part one in a learning path that will cover the five commonly recognized phases of Design Thinking and how to apply them to software engineering and other technical projects.  Each course may be taken as a stand-alone resource, but to get the greatest benefit from the material it's recommended that you work through the learning path in order.
 
 # What you'll learn
 

@@ -1,7 +1,7 @@
-title: "Design Thinking: Phase One - Empathy"
-tagline: Learn how to use the first phase of Design Thinking, Empathy, to create innovative solutions for your projects.
+title: "Design Thinking: Phase One - Empathize"
+tagline: Learn how to use the first phase of Design Thinking, Empathize, to create innovative solutions for your projects.
 description: >-
-  Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through how to apply the first phase, empathy, to your projects.
+  Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through how to apply the first phase, empathize, to your projects.
 template:
   repo: design-thinking-phase-one-empathy-template
   name: design-thinking-phase-one-empathy
@@ -12,7 +12,7 @@ preferences:
     description: Select your role to see tailored content.
     options:
       - label: Developer
-        value: developer
+        value: dev
       - label: Project Manager
         value: pm
       - label: No specific role
@@ -21,7 +21,7 @@ preferences:
 before:
   - type: createIssue
     title: Welcome!
-    body: new-issue.md
+    body: 01_welcome-issue.md
 steps:
   - title: First step
     description: The first step in your course
