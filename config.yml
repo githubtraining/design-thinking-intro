@@ -1,0 +1,18 @@
+title: design-thinking-phase-one-empathy
+description: >-
+  This course will teach you the principles of Design Thinking and walk you
+  through the first phase, Empathy.
+template:
+  repo: design-thinking-phase-one-empathy-template
+  name: design-thinking-phase-one-empathy
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
