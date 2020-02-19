@@ -23,7 +23,7 @@ template:
 before:
   - type: updateBranchProtection
   - type: createIssue
-    title: Welcome!
+    title: Design Thinking Phase One - Empathy
     body: welcome-issue.md
     comments:
       - turn-on-gh-pages.md

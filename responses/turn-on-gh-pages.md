@@ -1,6 +1,6 @@
 ## Step 1: Turn on GitHub Pages
 
-Let's use GitHub Pages! GitHub Pages allow you to serve a static site from a repository. We've filled this repository with some site content, but the rendered site isn't visible right now. Let's change that.
+Let's use GitHub Pages! GitHub Pages allow you to serve a static site from a repository. In this course, we'll use GitHub Pages to host our slideshow, but the site isn't visible right now. Let's change that.
 
 ### :keyboard: Activity: Enable GitHub Pages
 
