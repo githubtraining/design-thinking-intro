@@ -17,18 +17,19 @@ And when you're done you'll be able to:
 - Use Empathy as a tool for envisioning and defining more meaningful solutions.
 
 # What you'll build
-- TBD
-<p align="left">
-  <img src="https://user-images.githubusercontent.com/38021615/74766565-2f197600-523a-11ea-9639-e22513cf6e6e.png" width="250" height="250">
-</p>
+
+![slide show](https://user-images.githubusercontent.com/16547949/69274863-44362880-0ba9-11ea-98f6-b58cfc9eab02.gif)
 
 - Completed [source repository](https://github.com/githubtraining/design-thinking-phase-one-empathy/)
+- Interactive [slideshow](https://githubtraining.github.io/github-slideshow-demo/) deployed to GitHub Pages.
 
 # Prerequisites
 None. This course is a great introduction to Design Thinking for anyone involved in technical projects.
 
 # Projects used
-TBD
+This makes use of the following open source projects. Consider exploring these repos and maybe even making contributions!
+- [reveal.js](https://github.com/hakimel/reveal.js): A framework for creating presentations using HTML
+- [Jekyll](https://github.com/jekyll/jekyll): a simple, blog-aware, static site generator.
 
 # Audience
 
