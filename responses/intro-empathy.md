@@ -1,3 +1,0 @@
-## Step 3: Introduction to Empathy
-
-Placeholder text...

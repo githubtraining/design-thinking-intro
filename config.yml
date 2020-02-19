@@ -27,7 +27,8 @@ before:
 # Course artifacts:
 # 1. Issue: Welcome
 # 2. Issue: Intro to Design Thinking
-#
+# 3. Issue: Intro to Empathy
+# ...
 #Issue: Publish your toolkit
 
 
@@ -43,11 +44,32 @@ steps:
   actions:
   - type: createIssue
     title: Intro to Design Thinking
-    body: intro-design-thinking.md
-    action_id: secondIssue
+    body: 01_intro-design-thinking.md
+    action_id: designthinkingIssue
   # prepping the learner for the NEXT step
   - type: respond
-    with: 01_design-thinking-technology.md
+    with: 01_design-thinking-answer.md
     data:
-      url: '%actions.secondIssue.data.html_url%'
+      url: '%actions.designthinkingIssue.data.html_url%'
   - type: closeIssue
+
+
+    # 2
+  - title: Intro to Design Thinking
+    description: Understand the fudamental principles of Design Thinking.
+
+    # what we expect the learner to do
+    link: '{{ repoUrl }}/issues/2'
+    event: issues.edited
+    # how we validate that the learner did it right
+    actions:
+    - type: createIssue
+      title: Intro to Empathize
+      body: 02_intro-empathize.md
+      action_id: empathizeIssue
+    # prepping the learner for the NEXT step
+    - type: respond
+      with: 03_empathize-answer.md
+      data:
+        url: '%actions.empathizeIssue.data.html_url%'
+    - type: closeIssue
