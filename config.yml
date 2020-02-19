@@ -69,7 +69,7 @@ steps:
       action_id: empathizeIssue
     # prepping the learner for the NEXT step
     - type: respond
-      with: 03_empathize-answer.md
+      with: 02_empathize-answer.md
       data:
         url: '%actions.empathizeIssue.data.html_url%'
     - type: closeIssue
