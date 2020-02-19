@@ -23,46 +23,52 @@ template:
 before:
   - type: updateBranchProtection
   - type: createIssue
-    title: Design Thinking Phase One - Empathy
+    title: Welcome to Design Thinking Phase One
     body: welcome-issue.md
     comments:
-      - turn-on-gh-pages.md
+      - turn-on-gh-pages.md #posted as a comment upon completion
 steps:
   # 1
   - title: Turn on GitHub Pages
     description: Turn on GitHub Pages in the settings page of the repository.
+
+    # what we expect the learner to do
     event: page_build
     link: '{{ repoUrl }}/issues/1'
+    # how we validate that the learner did it right
     actions:
     - type: octokit
       method: repos.getPages
       owner: '%payload.repository.owner.login%'
       repo: '%payload.repository.name%'
       action_id: pagesUrl
+    # prepping the learner for the NEXT step
     - type: respond
-      issue: Design Thinking Phase One - Empathy
+      issue: Welcome to Design Thinking Phase One
       with: close-issue.md
       data:
         pagesUrl: '%actions.pagesUrl.data.html_url%'
 
   # 2
-  - title: Close an issue
-    description: Cease a conversation by closing an issue.
+  - title: Intro to Design Thinking
+    description: What the heck is Design Thinking, anyway?
     event: issues.closed
     link: '{{ repoUrl }}/issues/1'
+
     actions:
     - type: createIssue
       title: Introduction to Design Thinking
       body: intro-design-thinking.md
-      comments:
-        - intro-empathy.md
+  #  comments:
+  #      - intro-empathy.md
   # 3
-  - title: Empathy
-    description: Understand how to use Empathy in Design Thinking.
-    link: '{{ repoUrl }}/issues/2'
-    event: issue_comment.created
-    actions:
+#  - title: Empathy
+#    description: Understand how to use Empathy in Design Thinking.
+#    link: '{{ repoUrl }}/issues/2'
+#    event: issue_comment.created
+#    actions:
 #    - type: removeBranchProtection
 #      required: false
-    - type: respond
-      with: close-issue.md
+#    - type: respond
+#      with: close-issue.md
+#

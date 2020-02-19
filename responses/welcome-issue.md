@@ -19,7 +19,7 @@ The other courses in the Learning Path are (coming soon):
 
 ### Additional Resources
 
-Design Thinking is a broad topic with application across industry.  Here are some great resources if you're interested in learning more:
+Design Thinking is a broad topic that applies across industry.  Here are some great resources if you're interested in learning more:
 
 - [IDEO, the company that popularized Design Thinking](https://designthinking.ideo.com/)
 - [Stanford's 5 phases of Design Thinking](https://dschool-old.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)
