@@ -34,7 +34,7 @@ before:
 steps:
   # 1
 - title: Answer your first challenge question
-  description: Determine the differences between open source and InnerSource.
+  description: Determine the focus of Design Thinking.
 
   # what we expect the learner to do
   link: '{{ repoUrl }}/issues/1'
@@ -44,7 +44,10 @@ steps:
   - type: createIssue
     title: Intro to Design Thinking
     body: intro-design-thinking.md
+    action_id: secondIssue
   # prepping the learner for the NEXT step
   - type: respond
     with: 01_design-thinking-technology.md
+    data:
+      url: '%actions.secondIssue.data.html_url%'
   - type: closeIssue
