@@ -10,7 +10,7 @@ In this course, we'll use a case study to walk through how to apply empathy in a
 
 **Design Thinking: Phase One - Empathize** is part one in a learning path that will cover the five commonly recognized phases of Design Thinking and how to apply them to software engineering and other technical projects.  Each course may be taken as a stand-alone resource, but to get the greatest benefit from the material it's recommended that you work through the learning path in order.
 
-The other courses in the Learning Path are:
+The other courses in the Learning Path are (coming soon):
 - Design Thinking: Phase Two - Define
 - Design Thinking: Phase Three - Ideate
 - Design Thinking: Phases Four and Five - Prototype and Test

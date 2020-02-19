@@ -1,4 +1,4 @@
-## Step 3: Close an issue
+## Step 2: Close an issue
 
 You turned on GitHub Pages!
 

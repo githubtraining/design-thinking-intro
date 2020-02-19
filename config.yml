@@ -46,3 +46,23 @@ steps:
         pagesUrl: '%actions.pagesUrl.data.html_url%'
 
   # 2
+  - title: Close an issue
+    description: Cease a conversation by closing an issue.
+    event: issues.closed
+    link: '{{ repoUrl }}/issues/1'
+    actions:
+    - type: createIssue
+      title: Introduction to Design Thinking
+      body: intro-design-thinking.md
+      comments:
+        - intro-empathy.md
+  # 3
+  - title: Empathy
+    description: Understand how to use Empathy in Design Thinking.
+    link: '{{ repoUrl }}/issues/2'
+    event: issue_comment.created
+    actions:
+#    - type: removeBranchProtection
+#      required: false
+    - type: respond
+      with: close-issue.md
