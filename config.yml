@@ -1,7 +1,5 @@
-title: "Design Thinking: Phase One - Empathize"
-tagline: Learn how to use the first phase of Design Thinking, Empathize, to create innovative solutions for your projects.
-description: >-
-  Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through how to apply the first phase, empathize, to your projects.
+title: "Design Thinking Phase One - Empathize"
+description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through appling the first phase, empathize, to your projects.
 template:
   repo: design-thinking-phase-one-empathy-template
   name: design-thinking-phase-one-empathy
@@ -23,52 +21,30 @@ template:
 before:
   - type: updateBranchProtection
   - type: createIssue
-    title: Welcome to Design Thinking Phase One
-    body: welcome-issue.md
-    comments:
-      - turn-on-gh-pages.md #posted as a comment upon completion
+    title: Welcome
+    body: 00_welcome.md
+
+# Course artifacts:
+# 1. Issue: Welcome
+# 2. Issue: Intro to Design Thinking
+#
+#Issue: Publish your toolkit
+
+
 steps:
   # 1
-  - title: Turn on GitHub Pages
-    description: Turn on GitHub Pages in the settings page of the repository.
+- title: Answer your first challenge question
+  description: Determine the differences between open source and InnerSource.
 
-    # what we expect the learner to do
-    event: page_build
-    link: '{{ repoUrl }}/issues/1'
-    # how we validate that the learner did it right
-    actions:
-    - type: octokit
-      method: repos.getPages
-      owner: '%payload.repository.owner.login%'
-      repo: '%payload.repository.name%'
-      action_id: pagesUrl
-    # prepping the learner for the NEXT step
-    - type: respond
-      issue: Welcome to Design Thinking Phase One
-      with: close-issue.md
-      data:
-        pagesUrl: '%actions.pagesUrl.data.html_url%'
-
-  # 2
-  - title: Intro to Design Thinking
-    description: What the heck is Design Thinking, anyway?
-    event: issues.closed
-    link: '{{ repoUrl }}/issues/1'
-
-    actions:
-    - type: createIssue
-      title: Introduction to Design Thinking
-      body: intro-design-thinking.md
-  #  comments:
-  #      - intro-empathy.md
-  # 3
-#  - title: Empathy
-#    description: Understand how to use Empathy in Design Thinking.
-#    link: '{{ repoUrl }}/issues/2'
-#    event: issue_comment.created
-#    actions:
-#    - type: removeBranchProtection
-#      required: false
-#    - type: respond
-#      with: close-issue.md
-#
+  # what we expect the learner to do
+  link: '{{ repoUrl }}/issues/1'
+  event: issues.edited
+  # how we validate that the learner did it right
+  actions:
+  - type: createIssue
+    title: Intro to Design Thinking
+    body: intro-design-thinking.md
+  # prepping the learner for the NEXT step
+  - type: respond
+    with: 01_design-thinking-technology.md
+  - type: closeIssue
