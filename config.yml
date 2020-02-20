@@ -55,21 +55,21 @@ steps:
 
 
     # 2
-  - title: Intro to Design Thinking
-    description: Understand the fudamental principles of Design Thinking.
 
-    # what we expect the learner to do
-    link: '{{ repoUrl }}/issues/2'
-    event: issues.edited
-    # how we validate that the learner did it right
-    actions:
-    - type: createIssue
-      title: Intro to Empathize
-      body: 02_intro-empathize.md
-      action_id: empathizeIssue
-    # prepping the learner for the NEXT step
-    - type: respond
-      with: 02_empathize-answer.md
-      data:
-        url: '%actions.empathizeIssue.data.html_url%'
-    - type: closeIssue
+- title: Intro to Design Thinking
+  description: Understand the fudamental principles of Design Thinking.
+  # what we expect the learner to do
+  link: '{{ repoUrl }}/issues/2'
+  event: issues.edited
+  # how we validate that the learner did it right
+  actions:
+  - type: createIssue
+    title: Intro to Empathize
+    body: 02_intro-empathize.md
+    action_id: empathizeIssue
+  # prepping the learner for the NEXT step
+  - type: respond
+    with: 02_empathize-answer.md
+    data:
+      url: '%actions.empathizeIssue.data.html_url%'
+  - type: closeIssue
