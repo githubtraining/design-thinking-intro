@@ -26,8 +26,8 @@ before:
 
 # Course artifacts:
 # 1. Issue: Welcome
-# 2. Issue: Intro to Design Thinking
-# 3. Issue: Intro to Empathy
+# 2. Issue: Intro to Design Thinking & Empathy
+# 3. Issue: Empathy Case Study
 # ...
 #Issue: Publish your toolkit
 
@@ -72,4 +72,5 @@ steps:
     with: 02_empathize-answer.md
     data:
       url: '%actions.empathizeIssue.data.html_url%'
-  - type: closeIssue
+
+ 
