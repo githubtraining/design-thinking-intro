@@ -2,7 +2,7 @@
 title: Design Thinking Phase One - Empathize
 description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying the first phase, empathize, to your projects. 
 template:
-  name: design-thinking-phase-one-empathy-template
+  name: design-thinking-phase-one-empathy
   repo: design-thinking-phase-one-empathy-template
 before:
 - type: createIssue
