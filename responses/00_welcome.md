@@ -2,28 +2,18 @@
 
 Hello @{{user.login}}, I'm so excited to teach you about Design Thinking! 😄
 
-### Course Structure
+This repository will be a working website that you can publish as your own Design Thinking landing page.
 
-In this course, we'll use a case study to walk through how to apply empathy in a user-centric approach to solutioning.  We'll also create a website where you can store notes on the key points of this phase of the Design Thinking approach.  You'll be able to use this website as a future resource for bringing this learning back to your team.
+![Screen Shot of final product](https://user-images.githubusercontent.com/57373296/74977834-7e59d500-53f9-11ea-8511-26712fa68286.PNG)
 
-### Learning Path
+As we work, we'll create a resource that others can use within your organization. This repository will be useful even after you finish this course.
 
-**Design Thinking: Phase One - Empathize** is part one in a learning path that will cover the five commonly recognized phases of Design Thinking and how to apply them in software engineering.  Each course may be taken as a stand-alone resource, but we recommend that you work through the learning path in order.
+This is how this course will move along:
 
-The other courses in the Learning Path are (coming soon):
-- Design Thinking Phase Two - Define
-- Design Thinking Phase Three - Ideate
-- Design Thinking Phases Four and Five - Prototype and Test
-- Design Thinking with GitHub
-- Design Thinking & Agile
+- Every new issue or pull request will start with a challenge question
+- You'll answer the challenge question _(don't worry, there are no right or wrong answers!)_
+- The question will highlight the importance of each topic in Design Thinking
 
-### Additional Resources
-
-Design Thinking is a broad topic that applies across industry.  Here are some great resources if you're interested in learning more:
-
-- [IDEO, the company that popularized Design Thinking](https://designthinking.ideo.com/)
-- [Stanford's 5 phases of Design Thinking](https://dschool-old.stanford.edu/sandbox/groups/designresources/wiki/36873/attachments/74b3d/ModeGuideBOOTCAMP2010L.pdf)
-- [The Design of Everyday Things](https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/)
 
 
 ### Challenge question

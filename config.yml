@@ -1,76 +1,65 @@
-title: "Design Thinking Phase One - Empathize"
-description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through appling the first phase, empathize, to your projects.
+
+title: Design Thinking Phase One - Empathize
+description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through appling the first phase, empathize, to your projects. 
 template:
+  name: design-thinking-phase-one-empathy-template
   repo: design-thinking-phase-one-empathy-template
-  name: design-thinking-phase-one-empathy
-
-#  preferences:
-#  - type: radio
-#    name: teamRole
-#    label: Select your role
-#    description: Select your role to see tailored content.
-#    options:
-#      - label: Developer
-#        value: dev
-#      - label: Project Manager
-#        value: pm
-#      - label: No specific role
-#        value: all
-#        selected: true
-
 before:
-  - type: updateBranchProtection
-  - type: createIssue
-    title: Welcome
-    body: 00_welcome.md
+- type: createIssue
+  title: Welcome
+  body: 00_welcome.md
+- type: updateBranchProtection
 
 # Course artifacts:
 # 1. Issue: Welcome
-# 2. Issue: Intro to Design Thinking & Empathy
-# 3. Issue: Empathy Case Study
-# ...
-#Issue: Publish your toolkit
-
+# 2. PR: Repository ownership and names
+# 3. PR: Create discoverable repos
+# 4. PR: Issue and PR templates
+# 5. PR: Workflows
+# 6. PR: Managing projects on GitHub
+# 7. PR: Measuring success
+# 8: Issue: Publish your toolkit
+# Course artifacts:
+# 1. Issue: Welcome
+# 2. PR: Repository ownership and names
+# 3. PR: Create discoverable repos
+# 4. PR: Issue and PR templates
+# 5. PR: Workflows
+# 6. PR: Managing projects on GitHub
+# 7. PR: Measuring success
+# 8: Issue: Publish your toolkit
 
 steps:
-  # 1
+
+#1
 - title: Answer your first challenge question
   description: Determine the focus of Design Thinking.
-
-  # what we expect the learner to do
+  # what we expect the learner to do
   link: '{{ repoUrl }}/issues/1'
-  event: issues.edited
-  # how we validate that the learner did it right
+  event: issues.edited #answer the question
+  # prepping the learner for the NEXT step
   actions:
-  - type: createIssue
-    title: Intro to Design Thinking
+  - type: createPullRequest
+    title: Introduction to Design Thinking
+    head: intro-dt
     body: 01_intro-design-thinking.md
-    action_id: designthinkingIssue
-  # prepping the learner for the NEXT step
+    action_id: introPR
+  # how we validate that the learner did it right
   - type: respond
-    with: 01_design-thinking-answer.md
-    data:
-      url: '%actions.designthinkingIssue.data.html_url%'
+    with: 01_technology-answer.md
+    data: 
+      url: '%actions.introPR.data.html_url%'
   - type: closeIssue
 
-
-    # 2
-
-- title: Intro to Design Thinking
-  description: Understand the fudamental principles of Design Thinking.
-  # what we expect the learner to do
-  link: '{{ repoUrl }}/issues/2'
-  event: issues.edited
-  # how we validate that the learner did it right
+#2
+- title: Answer the ownership challenge
+  description: Discover the three categories of interest in Design Thinking.
+  link: '{{ repoUrl }}/pull/2'
+  event: pull_request.edited
   actions:
-  - type: createIssue
-    title: Intro to Empathize
-    body: 02_intro-empathize.md
-    action_id: empathizeIssue
-  # prepping the learner for the NEXT step
+  - type: removeBranchProtection
+    required: false
   - type: respond
-    with: 02_empathize-answer.md
-    data:
-      url: '%actions.empathizeIssue.data.html_url%'
+    with: 02_intro-answer.md # this should have my first PR in it
 
- 
+

@@ -5,4 +5,5 @@
 This approach leads to more meaningful and innovative solutions, regardless of industry.
 
 <hr>
-<h3 align="center">We'll get into the details of how this works in the <a href="{{ url }}">next issue</a>.</h3>
+<h3 align="center">You can find your next steps in the <a href="{{ url }}">next pull request</a>.</h3>
+

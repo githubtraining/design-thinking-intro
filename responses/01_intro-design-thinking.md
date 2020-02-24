@@ -1,15 +1,11 @@
-## What is Design Thinking?
+Our first pull request introduces Design Thinking in more detail.
 
-Placeholder text...
 ### Challenge question
 
+The most important consideration in creating a solution using Design Thinking is Desirability for the User
 
-Now let's try your first challenge question!
-
-Design Thinking focuses on using the newest technologies to solve problems.
-
-- [ ] True
-- [ ] False
+- [ ] True, there is a repository at the given URL
+- [ ] False, no repository exists at the given URL
 
 <hr>
 <h3 align="center">I'll respond when you check one of the boxes above.</h3>
