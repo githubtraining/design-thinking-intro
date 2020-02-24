@@ -29,7 +29,7 @@ steps:
   actions:
   - type: createPullRequest
     title: Intro to Design Thinking
-    head: intro-dt
+    head: mvp #branch merging from
     body: 01_intro-design-thinking.md
     action_id: introPR
   # how we validate that the learner did it right
