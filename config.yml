@@ -1,6 +1,6 @@
 
 title: Design Thinking Phase One - Empathize
-description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through appling the first phase, empathize, to your projects. 
+description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying the first phase, empathize, to your projects. 
 template:
   name: design-thinking-phase-one-empathy-template
   repo: design-thinking-phase-one-empathy-template
@@ -52,14 +52,14 @@ steps:
   - type: closeIssue
 
 #2
-- title: Answer the ownership challenge
-  description: Discover the three categories of interest in Design Thinking.
-  link: '{{ repoUrl }}/pull/2'
-  event: pull_request.edited
-  actions:
-  - type: removeBranchProtection
-    required: false
-  - type: respond
-    with: 02_intro-answer.md # this should have my first PR in it
+#- title: Answer the primary consideration challenge
+#  description: Discover the three important considerations in Design Thinking.
+#  link: '{{ repoUrl }}/pull/2'
+#  event: pull_request.edited
+#  actions:
+#  - type: removeBranchProtection
+#    required: false
+#  - type: respond
+#    with: 02_intro-answer.md # this should have my first PR in it
 
 
