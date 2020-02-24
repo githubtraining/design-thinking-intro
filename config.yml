@@ -12,22 +12,10 @@ before:
 
 # Course artifacts:
 # 1. Issue: Welcome
-# 2. PR: Repository ownership and names
-# 3. PR: Create discoverable repos
-# 4. PR: Issue and PR templates
-# 5. PR: Workflows
-# 6. PR: Managing projects on GitHub
-# 7. PR: Measuring success
-# 8: Issue: Publish your toolkit
-# Course artifacts:
-# 1. Issue: Welcome
-# 2. PR: Repository ownership and names
-# 3. PR: Create discoverable repos
-# 4. PR: Issue and PR templates
-# 5. PR: Workflows
-# 6. PR: Managing projects on GitHub
-# 7. PR: Measuring success
-# 8: Issue: Publish your toolkit
+# 2. PR: Intro to Design Thinking
+# 3. PR: Five Phases
+# 4. PR: Empathy
+# 5: Issue: Publish your toolkit
 
 steps:
 
@@ -39,16 +27,16 @@ steps:
   event: issues.edited #answer the question
   # prepping the learner for the NEXT step
   actions:
-  - type: createPullRequest
-    title: Introduction to Design Thinking
-    head: intro-dt
-    body: 01_intro-design-thinking.md
-    action_id: introPR
+  # - type: createPullRequest
+  #   title: Intro to Design Thinking
+  #   head: intro-dt
+  #   body: 01_intro-design-thinking.md
+  #   action_id: introPR
   # how we validate that the learner did it right
   - type: respond
     with: 01_technology-answer.md
-    data: 
-      url: '%actions.introPR.data.html_url%'
+    # data: 
+    #   url: '%actions.introPR.data.html_url%'
   - type: closeIssue
 
 #2
@@ -61,5 +49,46 @@ steps:
 #    required: false
 #  - type: respond
 #    with: 02_intro-answer.md # this should have my first PR in it
+
+#3
+# - title: Merge the ownership pull request
+#   description: Beef up your InnerSource toolkit with resources about repository ownership.
+#   link: '{{ repoUrl }}/pull/2'
+#   event: pull_request.closed
+#   actions:
+#   - type: updateBranchProtection
+#     required: false
+#   - type: createPullRequest
+#     title: Create discoverable repos
+#     head: discoverable-repos
+#     body: 03_discoverable.md
+#     action_id: discoverablePR
+#   - type: respond
+#     with: goto-pr.md
+#     data:
+#       url: '%actions.discoverablePR.data.html_url%'  
+
+
+#5
+# - title: Enable GitHub Pages
+#   description: Publish your Design Thinking toolkit by turning on GitHub Pages. 
+#   link: '{{ repoUrl }}/pull/8'
+#   event: page_build
+#   actions:
+#   - type: removeBranchProtection
+#     required: false
+#   - type: octokit
+#     method: repos.getPages
+#     owner: '%payload.repository.owner.login%'
+#     repo: '%payload.repository.name%'
+#     action_id: pagesUrl
+#   - type: respond
+#     issue: Publish your toolkit
+#     with: 14_congratulations.md
+#     data:
+#       deploymentURL: '%actions.pagesUrl.data.html_url%'
+#       learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
+#       forkURL: '%payload.repository.html_url%/fork'
+#       downloadURL: '%payload.repository.html_url%/archive/master.zip'
 
 
