@@ -1,3 +1,0 @@
-## Introduction to Empathize
-
-Placeholder text...

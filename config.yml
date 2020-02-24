@@ -27,49 +27,49 @@ steps:
   event: issues.edited #answer the question
   # prepping the learner for the NEXT step
   actions:
-  # - type: createPullRequest
-  #   title: Intro to Design Thinking
-  #   head: intro-dt
-  #   body: 01_intro-design-thinking.md
-  #   action_id: introPR
+  - type: createPullRequest
+    title: Intro to Design Thinking
+    head: intro-dt
+    body: 01_intro-design-thinking.md
+    action_id: introPR
   # how we validate that the learner did it right
   - type: respond
     with: 01_technology-answer.md
-    # data: 
-    #   url: '%actions.introPR.data.html_url%'
+    data: 
+      url: '%actions.introPR.data.html_url%'
   - type: closeIssue
 
 #2
-#- title: Answer the primary consideration challenge
-#  description: Discover the three important considerations in Design Thinking.
-#  link: '{{ repoUrl }}/pull/2'
-#  event: pull_request.edited
-#  actions:
-#  - type: removeBranchProtection
-#    required: false
-#  - type: respond
-#    with: 02_intro-answer.md # this should have my first PR in it
+- title: Answer the MVP challenge
+  description: Discover the definition of MVP and the three important considerations in Design Thinking.
+  link: '{{ repoUrl }}/pull/2'
+  event: pull_request.edited
+  actions:
+  - type: removeBranchProtection
+    required: false
+  - type: respond
+    with: 02_intro-answer.md # this has the first PR in it
 
 #3
-# - title: Merge the ownership pull request
-#   description: Beef up your InnerSource toolkit with resources about repository ownership.
-#   link: '{{ repoUrl }}/pull/2'
-#   event: pull_request.closed
-#   actions:
-#   - type: updateBranchProtection
-#     required: false
-#   - type: createPullRequest
-#     title: Create discoverable repos
-#     head: discoverable-repos
-#     body: 03_discoverable.md
-#     action_id: discoverablePR
-#   - type: respond
-#     with: goto-pr.md
-#     data:
-#       url: '%actions.discoverablePR.data.html_url%'  
+- title: Merge the MVP pull request
+  description: Beef up your Design Thinking toolkit with resources about Minimum Viable Product.
+  link: '{{ repoUrl }}/pull/2'
+  event: pull_request.closed
+  actions:
+  - type: updateBranchProtection
+    required: false
+  - type: createPullRequest
+    title: The three principles of Design Thinking
+    head: three-principles
+    body: 03_three-principles.md
+    action_id: principlesPR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.principlesPR.data.html_url%'  
 
 
-#5
+#6
 # - title: Enable GitHub Pages
 #   description: Publish your Design Thinking toolkit by turning on GitHub Pages. 
 #   link: '{{ repoUrl }}/pull/8'
