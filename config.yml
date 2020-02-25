@@ -17,6 +17,34 @@ before:
 # 4. PR: Empathy
 # 5: Issue: Publish your toolkit
 
+
+# Template repo
+# branch master:
+# _config.yml
+
+# branch mvp: 
+# - mvp/README.md
+
+# branch five-phases:
+# - five-phases/README.md
+
+# branch empathy:
+# - empathy/README.md
+
+
+
+# Final filetree:
+# _config.yml: configure the GitHub Pages site
+# README.md
+# + mvp
+# +- README.md
+# + five-phases
+# +- README.md
+# + empathy
+# +- README.md
+
+
+
 steps:
 
 #1
@@ -59,36 +87,91 @@ steps:
   - type: updateBranchProtection
     required: false
   - type: createPullRequest
-    title: The three principles of Design Thinking
-    head: three-principles
+    title: Principles and Phases of Design Thinking
+    head: five-phases
     body: 03_three-principles.md
-    action_id: principlesPR
+    action_id: phasesPR
   - type: respond
     with: goto-pr.md
     data:
-      url: '%actions.principlesPR.data.html_url%'  
+      url: '%actions.phasesPR.data.html_url%'  
 
+#4
+- title: Answer the Design Thinking principles challenge
+  description: Learn about the three central principles and five phases of Design Thinking.
+  link: '{{ repoUrl }}/pull/3'
+  event: issue_comment.created
+  actions:
+  - type: removeBranchProtection
+    required: false
+  - type: respond
+    with: 04_three-principles-answer.md
+
+#5
+- title: Merge the five phases pull request
+  description: Add resources about the five phases of Design Thinking to your toolkit.
+  link: '{{ repoUrl }}/pull/3'
+  event: pull_request.closed
+  actions:
+  - type: updateBranchProtection
+    required: false
+  - type: createPullRequest
+    title: Empathize
+    head: empathy
+    body: 05_empathize.md
+    action_id: empathyPR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.empathyPR.data.html_url%'
 
 #6
-# - title: Enable GitHub Pages
-#   description: Publish your Design Thinking toolkit by turning on GitHub Pages. 
-#   link: '{{ repoUrl }}/pull/8'
-#   event: page_build
-#   actions:
-#   - type: removeBranchProtection
-#     required: false
-#   - type: octokit
-#     method: repos.getPages
-#     owner: '%payload.repository.owner.login%'
-#     repo: '%payload.repository.name%'
-#     action_id: pagesUrl
-#   - type: respond
-#     issue: Publish your toolkit
-#     with: 14_congratulations.md
-#     data:
-#       deploymentURL: '%actions.pagesUrl.data.html_url%'
-#       learningPathURL: 'https://lab.github.com/githubtraining/paths/innersource:-theory-to-practice'
-#       forkURL: '%payload.repository.html_url%/fork'
-#       downloadURL: '%payload.repository.html_url%/archive/master.zip'
+- title: Answer the Empathize challenge question
+  description: Learn how to use empathy as a tool in Design Thinking.
+  link: '{{ repoUrl }}/pull/4'
+  event: pull_request.edited
+  actions:
+  - type: removeBranchProtection
+    required: false
+  - type: respond
+    with: 06_empathize-answer.md
+
+#7
+- title: Merge the empathize pull request
+  description: Add the empathy content to your Design Thinking toolkit.
+  link: '{{ repoUrl }}/pull/4'
+  event: pull_request.closed
+  actions:
+  - type: updateBranchProtection
+    required: false
+  - type: createIssue
+    title: Publish your toolkit
+    body: 07_publish.md
+    action_id: publishIssue
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.publishIssue.data.html_url%'
+
+#8
+- title: Enable GitHub Pages
+  description: Publish your Design Thinking toolkit by turning on GitHub Pages. 
+  link: '{{ repoUrl }}/pull/5'
+  event: page_build
+  actions:
+  - type: removeBranchProtection
+    required: false
+  - type: octokit
+    method: repos.getPages
+    owner: '%payload.repository.owner.login%'
+    repo: '%payload.repository.name%'
+    action_id: pagesUrl
+  - type: respond
+    issue: Publish your toolkit
+    with: 14_congratulations.md
+    data:
+      deploymentURL: '%actions.pagesUrl.data.html_url%'
+      forkURL: '%payload.repository.html_url%/fork'
+      downloadURL: '%payload.repository.html_url%/archive/master.zip'
 
 

@@ -18,7 +18,7 @@ And when you're done you'll be able to:
 # What you'll build
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/57373296/75124677-d2c1b680-567e-11ea-9b72-bbce6099ea95.PNG" >
+  <img src="https://user-images.githubusercontent.com/57373296/75275531-ae76ee80-57d2-11ea-8dbf-4dd146c13417.png" >
 </p>
 
 - Completed [source repository](https://github.com/githubtraining/design-thinking-phase-one-empathy/)
