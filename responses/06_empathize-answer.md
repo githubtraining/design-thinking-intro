@@ -36,11 +36,11 @@ The true solution however - the most meaningful result - might be to provide a f
 In this example, the customer's identification of the problem is influenced by the immediate pain point of having too much incoming data in too many formats.  The designer, however, delves to the root problem and envisions a more innovative solution.  One that not only addresses the unmanaged data, but provides real-time feedback to the citizen, dispatcher, and road crew so that nothing falls through the cracks and everyone is accountable for the condition of the roads.
 
 <hr>
-<br>
+
 
 In [The Design Of Everyday Things](https://jnd.org/the-design-of-everyday-things-revised-and-expanded-edition/) Don Norman states "One of my rules in consulting is simple: never solve the problem I am asked to solve. Why such a counterintuitive rule? Because, invariably, the problem I am asked to solve is not the real, fundamental, root problem.  It is usually a symptom."
 
-<br>
+
 <hr>
 <br>
 

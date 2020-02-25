@@ -69,7 +69,7 @@ steps:
 
 #2
 - title: Answer the MVP challenge
-  description: Discover the definition of MVP and the three important considerations in Design Thinking.
+  description: Discover the definition of MVP and important considerations in Design Thinking.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
@@ -97,8 +97,8 @@ steps:
       url: '%actions.phasesPR.data.html_url%'  
 
 #4
-- title: Answer the Design Thinking principles challenge
-  description: Learn about the three central principles and five phases of Design Thinking.
+- title: Answer the Principles challenge
+  description: Learn about the three central Principles and Five Phases of Design Thinking.
   link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
@@ -108,8 +108,8 @@ steps:
     with: 04_three-principles-answer.md
 
 #5
-- title: Merge the five phases pull request
-  description: Add resources about the five phases of Design Thinking to your toolkit.
+- title: Merge the Five Phases pull request
+  description: Add resources about the Five Phases of Design Thinking to your toolkit.
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
@@ -127,7 +127,7 @@ steps:
 
 #6
 - title: Answer the Empathize challenge question
-  description: Learn how to use empathy as a tool in Design Thinking.
+  description: Learn how to use Empathy as a tool in Design Thinking.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
@@ -137,8 +137,8 @@ steps:
     with: 06_empathize-answer.md
 
 #7
-- title: Merge the empathize pull request
-  description: Add the empathy content to your Design Thinking toolkit.
+- title: Merge the Empathize pull request
+  description: Add the Empathy content to your Design Thinking toolkit.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
