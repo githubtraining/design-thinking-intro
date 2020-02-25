@@ -31,7 +31,7 @@ Review the **Files Changed** tab to ensure we've captured this information about
 ### :keyboard: Activity: Five Phases
 
 1. Review the additions about the five phases in the `Files changed` tab
-2. Approve this pull request (if needed)
+2. Approve this pull request 
 3. Merge this pull request
 4. Delete the branch
 

@@ -51,7 +51,7 @@ Review the **Files Changed** tab to ensure we've captured this information about
 ### :keyboard: Activity: Empathize
 
 1. Review the additions about empathy in the `Files changed` tab
-2. Approve this pull request (if needed)
+2. Approve this pull request 
 3. Merge this pull request
 4. Delete the branch
 

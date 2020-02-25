@@ -26,7 +26,7 @@ In Design Thinking, human-centered design begins with Desirability.  The converg
 ### :keyboard: Activity: Review this pull request
 
 1. Read the additions in the `Files changed` tab
-2. Approve this pull request (if needed)
+2. Approve this pull request 
 3. Merge this pull request
 4. Delete the branch
 
