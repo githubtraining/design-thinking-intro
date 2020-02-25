@@ -142,7 +142,7 @@ steps:
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
-  - type: removeBranchProtection
+  - type: updateBranchProtection
     required: false
   - type: createIssue
     title: Publish your toolkit
