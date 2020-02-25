@@ -168,7 +168,7 @@ steps:
     action_id: pagesUrl
   - type: respond
     issue: Publish your toolkit
-    with: 14_congratulations.md
+    with: 08_congratulations.md
     data:
       deploymentURL: '%actions.pagesUrl.data.html_url%'
       forkURL: '%payload.repository.html_url%/fork'
