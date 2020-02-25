@@ -73,8 +73,8 @@ steps:
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
-  - type: removeBranchProtection
-    required: false
+ # - type: removeBranchProtection
+ #   required: false
   - type: respond
     with: 02_intro-answer.md # this has the first PR in it
 
@@ -84,8 +84,8 @@ steps:
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.closed
   actions:
-  - type: updateBranchProtection
-    required: false
+#  - type: updateBranchProtection
+#    required: false
   - type: createPullRequest
     title: Principles and Phases of Design Thinking
     head: five-phases
@@ -102,8 +102,8 @@ steps:
   link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
-  - type: removeBranchProtection
-    required: false
+#  - type: removeBranchProtection
+#    required: false
   - type: respond
     with: 04_three-principles-answer.md
 
@@ -113,8 +113,8 @@ steps:
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
-  - type: updateBranchProtection
-    required: false
+#  - type: updateBranchProtection
+ #   required: false
   - type: createPullRequest
     title: Empathize
     head: empathy
@@ -131,8 +131,8 @@ steps:
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
-  - type: removeBranchProtection
-    required: false
+ # - type: removeBranchProtection
+ #   required: false
   - type: respond
     with: 06_empathize-answer.md
 
@@ -142,8 +142,8 @@ steps:
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
-  - type: updateBranchProtection
-    required: false
+#  - type: updateBranchProtection
+#    required: false
   - type: createIssue
     title: Publish your toolkit
     body: 07_publish.md
@@ -159,8 +159,8 @@ steps:
   link: '{{ repoUrl }}/pull/5'
   event: page_build
   actions:
-  - type: removeBranchProtection
-    required: false
+ # - type: removeBranchProtection
+ #    required: false
   - type: octokit
     method: repos.getPages
     owner: '%payload.repository.owner.login%'
