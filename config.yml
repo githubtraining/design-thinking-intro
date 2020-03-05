@@ -67,7 +67,7 @@ steps:
   actions:
   - type: createPullRequest
     title: Intro to Design Thinking
-    head: mvp #branch merging from
+    head: minimum-viable-product #branch merging from
     body: 01_intro-design-thinking.md
     action_id: introPR
   # how we validate that the learner did it right
@@ -98,7 +98,7 @@ steps:
 #    required: false
   - type: createPullRequest
     title: Principles and Phases of Design Thinking
-    head: five-phases
+    head: intro
     body: 03_three-principles.md
     action_id: phasesPR
   - type: respond
@@ -127,7 +127,7 @@ steps:
  #   required: false
   - type: createPullRequest
     title: Empathize
-    head: empathy
+    head: phase-one
     body: 05_empathize.md
     action_id: empathyPR
   - type: respond
@@ -156,7 +156,7 @@ steps:
 #    required: false
   - type: createPullRequest
     title: Define
-    head: ideate
+    head: phase-two-and-three
     body: 07_define.md
     action_id: definePR
   - type: respond
@@ -187,7 +187,7 @@ steps:
 #   required: false
   - type: createPullRequest
     title: Prototype
-    head: prototype
+    head: phase-four-and-five
     body: 08_prototype.md
     action_id: prototypePR
   - type: respond
