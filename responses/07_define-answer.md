@@ -1,6 +1,7 @@
 ### :keyboard: Activity: Define & Ideate
 
-1. Review the additions about the Define & Empathy phases in the `Files changed` tab
+
+1. Review the additions about the Define & Ideate phases of Design Thinking in the `Files changed` tab.  That's where the content for these topics in our Design Thinking Toolkit will come from.
 2. Approve this pull request 
 3. Merge this pull request
 4. Delete the branch
