@@ -24,20 +24,20 @@ before:
 # branch master:
 # _config.yml
 
-# branch mvp: 
+# branch minimum-viable-product: 
 # - mvp/README.md
 
-# branch five-phases:
+# branch intro:
 # - five-phases/README.md
 
-# branch empathy:
+# branch phase-one:
 # - empathy/README.md
 
-# branch ideate:
-# - ideate/README.md
+# branch phases-two-and-three:
+# - define-and-ideate/README.md
 
-# branch prototype:
-# - prototype/README.md
+# branch phases-four-and-five:
+# - prototype-and-test/README.md
 
 
 # Final filetree:
@@ -49,9 +49,9 @@ before:
 # +- README.md
 # + empathy
 # +- README.md
-# + ideate
+# + define-and-ideate
 # +- README.md
-# + prototype
+# + prototype-and-test
 # +- README.md
 
 
@@ -126,7 +126,7 @@ steps:
 #  - type: updateBranchProtection
  #   required: false
   - type: createPullRequest
-    title: Empathize
+    title: Phase One - Empathize
     head: phase-one
     body: 05_empathize.md
     action_id: empathyPR
@@ -147,7 +147,7 @@ steps:
     with: 06_empathize-answer.md
 
 #7
-- title: Merge the e,pathize pull request
+- title: Merge the empathize pull request
   description: Add the empathy content to your Design Thinking toolkit.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
@@ -155,7 +155,7 @@ steps:
 #  - type: updateBranchProtection
 #    required: false
   - type: createPullRequest
-    title: Define
+    title: Phases Two & Three - Define & Ideate
     head: phase-two-and-three
     body: 07_define.md
     action_id: definePR
@@ -186,7 +186,7 @@ steps:
 #  - type: updateBranchProtection
 #   required: false
   - type: createPullRequest
-    title: Prototype
+    title: Phases Four & Five - Prototype & Test
     head: phase-four-and-five
     body: 08_prototype.md
     action_id: prototypePR

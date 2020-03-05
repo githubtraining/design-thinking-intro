@@ -1,3 +1,4 @@
+### Answer :crystal_ball:
 All of those methods are important to gaining an empathic understanding of the problem at hand, so all of the answers are right.  
 
 The designer must:
@@ -6,6 +7,9 @@ The designer must:
 3. **Immerse** themselves in the physical environment of the users.
 
 You'll read more detail about how to use empathy to design meaningful solutions in this pull request, which also includes a case study.
+
+
+<hr>
 
 ### :keyboard: Activity: Empathize
 
