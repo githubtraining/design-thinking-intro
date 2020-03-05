@@ -9,6 +9,8 @@ This repository will be a working website that you can publish as your own Desig
 <br>
 As we work, we'll create a resource that others can use within your organization. This repository will be useful even after you finish this course.
 
+<br>
+
 This is how this course will move along:
 
 - Every new issue or pull request will start with a challenge question
