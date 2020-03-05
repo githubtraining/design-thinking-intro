@@ -107,8 +107,8 @@ steps:
       url: '%actions.phasesPR.data.html_url%'  
 
 #4
-- title: Answer the Principles challenge
-  description: Learn about the three central Principles and Five Phases of Design Thinking.
+- title: Answer the core principles challenge
+  description: Learn about the three central principles of Design Thinking.
   link: '{{ repoUrl }}/pull/3'
   event: issue_comment.created
   actions:
@@ -118,8 +118,8 @@ steps:
     with: 04_three-principles-answer.md
 
 #5
-- title: Merge the Five Phases pull request
-  description: Add resources about the Five Phases of Design Thinking to your toolkit.
+- title: Merge the five phases pull request
+  description: Add resources about the five phases of Design Thinking to your toolkit.
   link: '{{ repoUrl }}/pull/3'
   event: pull_request.closed
   actions:
@@ -136,8 +136,8 @@ steps:
       url: '%actions.empathyPR.data.html_url%'
 
 #6
-- title: Answer the Empathize challenge question
-  description: Learn how to use Empathy as a tool in Design Thinking.
+- title: Answer the empathize challenge question
+  description: Learn how to use empathy as a tool in Design Thinking.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.edited
   actions:
@@ -147,8 +147,8 @@ steps:
     with: 06_empathize-answer.md
 
 #7
-- title: Merge the Empathize pull request
-  description: Add the Empathy content to your Design Thinking toolkit.
+- title: Merge the e,pathize pull request
+  description: Add the empathy content to your Design Thinking toolkit.
   link: '{{ repoUrl }}/pull/4'
   event: pull_request.closed
   actions:
@@ -167,8 +167,8 @@ steps:
 
 #add the define & ideate content
 #8
-- title: Answer the Define & Ideate challenge question
-  description: Learn how to use the Define & Ideate phases of Design Thinking.
+- title: Answer the define & ideate challenge question
+  description: Learn how to use the define & ideate phases of Design Thinking.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.edited
   actions:
@@ -178,8 +178,8 @@ steps:
     with: 07_define-answer.md
 
 #9
-- title: Merge the Define & Ideate pull request
-  description: Add the Define & Ideate content to your Design Thinking toolkit.
+- title: Merge the define & ideate pull request
+  description: Add the define & ideate content to your Design Thinking toolkit.
   link: '{{ repoUrl }}/pull/5'
   event: pull_request.closed
   actions:
@@ -197,8 +197,8 @@ steps:
 
 #add the prototype & test content
 #10
-- title: Answer the Prototype & Test challenge question
-  description: Learn how to use the Prototype & Test phases of Design Thinking.
+- title: Answer the prototype & test challenge question
+  description: Learn how to use the prototype & test phases of Design Thinking.
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.edited
   actions:
@@ -208,8 +208,8 @@ steps:
     with: 08_prototype-answer.md
 
 #11
-- title: Merge the Prototype & Test pull request
-  description: Add the Prototype & Test content to your Design Thinking toolkit.
+- title: Merge the prototype & test pull request
+  description: Add the prototype & test content to your Design Thinking toolkit.
   link: '{{ repoUrl }}/pull/6'
   event: pull_request.closed
   actions:
