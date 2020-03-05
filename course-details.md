@@ -18,7 +18,8 @@ And when you're done you'll be able to:
 # What you'll build
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/57373296/75994593-33e05a00-5ec9-11ea-9068-4203eedb5461.PNG" >
+  <img src="https://user-images.githubusercontent.com/57373296/76035130-b5a6a680-5f0e-11ea-9b69-d0751e1674e9.png" >
+
 </p>
 
 - Completed [source repository](https://github.com/lmkeston/empathy-dev)
