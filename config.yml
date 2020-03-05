@@ -1,6 +1,6 @@
 
 title: Introduction to Design Thinking 
-description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying the first phase, empathize, to your projects. 
+description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying its five phases to your projects. 
 template:
   name: design-thinking-intro
   repo: design-thinking-intro-template
@@ -15,6 +15,8 @@ before:
 # 2. PR: Intro to Design Thinking
 # 3. PR: Five Phases
 # 4. PR: Empathy
+# 5. PR: Define & Ideate
+# 6. PR: Prototype & Test
 # 5: Issue: Publish your toolkit
 
 
@@ -31,6 +33,11 @@ before:
 # branch empathy:
 # - empathy/README.md
 
+# branch define:
+# - define/README.md
+
+# branch prototype:
+# - prototype/README.md
 
 
 # Final filetree:
@@ -42,7 +49,10 @@ before:
 # +- README.md
 # + empathy
 # +- README.md
-
+# + define
+# +- README.md
+# + prototype
+# +- README.md
 
 
 steps:
@@ -144,19 +154,82 @@ steps:
   actions:
 #  - type: updateBranchProtection
 #    required: false
+  - type: createPullRequest
+    title: Define
+    head: define
+    body: 07_define.md
+    action_id: definePR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.definePR.data.html_url%'
+
+
+#add the define & ideate content
+#8
+- title: Answer the Define & Ideate challenge question
+  description: Learn how to use the Define & Ideate phases of Design Thinking.
+  link: '{{ repoUrl }}/pull/5'
+  event: pull_request.edited
+  actions:
+ # - type: removeBranchProtection
+ #   required: false
+  - type: respond
+    with: 07_define-answer.md
+
+#9
+- title: Merge the Define & Ideate pull request
+  description: Add the Define & Ideate content to your Design Thinking toolkit.
+  link: '{{ repoUrl }}/pull/5'
+  event: pull_request.closed
+  actions:
+#  - type: updateBranchProtection
+#   required: false
+  - type: createPullRequest
+    title: Prototype
+    head: prototype
+    body: 08_prototype.md
+    action_id: prototypePR
+  - type: respond
+    with: goto-pr.md
+    data:
+      url: '%actions.prototypePR.data.html_url%'
+
+#add the prototype & test content
+#10
+- title: Answer the Prototype & Test challenge question
+  description: Learn how to use the Prototype & Test phases of Design Thinking.
+  link: '{{ repoUrl }}/pull/6'
+  event: pull_request.edited
+  actions:
+ # - type: removeBranchProtection
+ #   required: false
+  - type: respond
+    with: 08_prototype-answer.md
+
+#11
+- title: Merge the Prototype & Test pull request
+  description: Add the Prototype & Test content to your Design Thinking toolkit.
+  link: '{{ repoUrl }}/pull/6'
+  event: pull_request.closed
+  actions:
+#  - type: updateBranchProtection
+#    required: false
   - type: createIssue
     title: Publish your toolkit
-    body: 07_publish.md
+    body: 09_publish.md
     action_id: publishIssue
   - type: respond
     with: goto-pr.md
     data:
       url: '%actions.publishIssue.data.html_url%'
 
-#8
+
+
+#12
 - title: Enable GitHub Pages
   description: Publish your Design Thinking toolkit by turning on GitHub Pages. 
-  link: '{{ repoUrl }}/pull/5'
+  link: '{{ repoUrl }}/pull/7'
   event: page_build
   actions:
  # - type: removeBranchProtection
@@ -168,7 +241,7 @@ steps:
     action_id: pagesUrl
   - type: respond
     issue: Publish your toolkit
-    with: 08_congratulations.md
+    with: 10_congratulations.md
     data:
       deploymentURL: '%actions.pagesUrl.data.html_url%'
       forkURL: '%payload.repository.html_url%/fork'
