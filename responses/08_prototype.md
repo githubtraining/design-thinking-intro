@@ -1,4 +1,4 @@
-This pull request is about the Prototype & Test phases of Design Thinking. Let's kick this topic off with a challenge question! 
+This pull request is about the **Prototype & Test** phases of Design Thinking. Let's kick this topic off with a challenge question! 
 
 
 Only high-fidelity prototypes are of value in Design Thinking.
