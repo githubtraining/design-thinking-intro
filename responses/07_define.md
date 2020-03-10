@@ -1,4 +1,4 @@
-This pull request is about the Define & Ideate phases of Design Thinking.  
+This pull request is about the **Define & Ideate** phases of Design Thinking.  
 
 ### Challenge question
 
