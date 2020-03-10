@@ -6,10 +6,7 @@ This repository will be a working website that you can publish as your own Desig
 
 ![tookit](https://user-images.githubusercontent.com/57373296/76035130-b5a6a680-5f0e-11ea-9b69-d0751e1674e9.png)
 
-<br>
 As we work, we'll create a resource that others can use within your organization. This repository will be useful even after you finish this course.
-
-<br>
 
 This is how this course will move along:
 
