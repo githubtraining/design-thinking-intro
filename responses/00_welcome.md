@@ -4,12 +4,9 @@ Hello @{{user.login}}, I'm so excited to teach you about Design Thinking! 😄
 
 This repository will be a working website that you can publish as your own Design Thinking landing page.
 
-![tookit](https://user-images.githubusercontent.com/57373296/76035130-b5a6a680-5f0e-11ea-9b69-d0751e1674e9.png)
+![toolkit](https://user-images.githubusercontent.com/6351798/76346666-ff0a4380-62ca-11ea-8609-408ca9126622.png)
 
-<br>
 As we work, we'll create a resource that others can use within your organization. This repository will be useful even after you finish this course.
-
-<br>
 
 This is how this course will move along:
 

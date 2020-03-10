@@ -18,7 +18,7 @@ And when you're done you'll be able to:
 # What you'll build
 
 <p align="left">
-  <img src="https://user-images.githubusercontent.com/57373296/76035130-b5a6a680-5f0e-11ea-9b69-d0751e1674e9.png" >
+  <img src="https://user-images.githubusercontent.com/6351798/76346666-ff0a4380-62ca-11ea-8609-408ca9126622.png" >
 
 </p>
 

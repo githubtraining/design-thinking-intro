@@ -1,5 +1,5 @@
 ### Answer :crystal_ball:
-That's right, it's false! One of the main reasons for prototyping is to _fail fast_.  Even a simple pencil & paper prototype can help teams to discover that they're on the wrong track.  As prototypes evolve user testing becomes more involved, but their feedback should be incorporated right from the beginning.  Prototyping allows for this kind of continuous feedback loop with users and other stakeholders from the start.
+It's false! One of the main reasons for prototyping is to _fail fast_.  Even a simple pencil & paper prototype can help teams to discover that they're on the wrong track.  As prototypes evolve user testing becomes more involved, but their feedback should be incorporated right from the beginning.  Prototyping allows for this kind of continuous feedback loop with users and other stakeholders from the start.
 
 This approach helps teams avoid getting stuck in limbo or "analysis paralysis" like Dilbert's colleagues.
 
