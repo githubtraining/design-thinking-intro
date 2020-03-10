@@ -11,7 +11,7 @@ In Design Thinking, human-centered design begins with Desirability.  The converg
 
 ### :keyboard: Activity: Review this pull request
 
-1. Read the additions about MVP in the `Files changed` tab.  That's where the content for this topic in our Design Thinking Toolkit will come from.
+1. Read the additions about MVP in the `Files changed` tab.  That's where the content for this topic in our Design Thinking Toolkit will come from
 2. Approve this pull request 
 3. Merge this pull request
 4. Delete the branch
