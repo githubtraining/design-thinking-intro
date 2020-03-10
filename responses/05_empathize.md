@@ -1,9 +1,9 @@
-This pull request is about the first phase of Design Thinking: Empathy.  
+This pull request is about the first phase of Design Thinking: **Empathy**.  
 
 ### Challenge question
 
 
-Arguably, Empathy is the most important stage of Design Thinking.  The purpose of this stage is to gain an empathic understanding of the problem at hand. 
+Arguably, empathy is the most important stage of Design Thinking.  The purpose of this stage is to gain an empathic understanding of the problem at hand. 
 
 Which of the following methods should a designer use to derive insights into user needs? 
 
