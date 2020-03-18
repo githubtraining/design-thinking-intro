@@ -1,6 +1,6 @@
 
-title: Introduction to Design Thinking 
-description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying its five phases to your projects. 
+title: Introduction to Design Thinking 
+description: Design Thinking is a human-centric approach to creating solutions.  This course will teach you the principles of Design Thinking and walk you through applying its five phases to your projects. 
 template:
   name: design-thinking-intro
   repo: design-thinking-intro-template
@@ -60,17 +60,17 @@ steps:
 #1
 - title: Answer your first challenge question
   description: Determine the focus of Design Thinking.
-  # what we expect the learner to do
+  # what we expect the learner to do
   link: '{{ repoUrl }}/issues/1'
   event: issues.edited #answer the question
-  # prepping the learner for the NEXT step
+  # prepping the learner for the NEXT step
   actions:
   - type: createPullRequest
     title: Intro to Design Thinking
     head: minimum-viable-product #branch merging from
     body: 01_intro-design-thinking.md
     action_id: introPR
-  # how we validate that the learner did it right
+  # how we validate that the learner did it right
   - type: respond
     with: 01_technology-answer.md
     data: 
@@ -79,14 +79,14 @@ steps:
 
 #2
 - title: Answer the MVP challenge
-  description: Discover the definition of MVP and important considerations in Design Thinking.
+  description: Discover the definition of MVP and important considerations in Design Thinking.
   link: '{{ repoUrl }}/pull/2'
   event: pull_request.edited
   actions:
  # - type: removeBranchProtection
  #   required: false
   - type: respond
-    with: 02_intro-answer.md # this has the first PR in it
+    with: 02_intro-answer.md # this has the first PR in it
 
 #3
 - title: Merge the MVP pull request
