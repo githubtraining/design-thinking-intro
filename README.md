@@ -6,7 +6,7 @@
 
 
 
-This repository powers the Learning Lab course [_Intro to Design Thinking_](https://lab.github.com/githubtraining/design-thinking-intro).
+This repository powers the Learning Lab course [_Intro to Design Thinking_](https://lab.github.com/githubtraining/introduction-to-design-thinking).
 
 Every Learning Lab course is made up of:
 - a [course repository](https://github.com/githubtraining/design-thinking-intro), and
