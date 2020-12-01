@@ -21,7 +21,7 @@ before:
 
 
 # Template repo
-# branch master:
+# branch main:
 # _config.yml
 
 # branch minimum-viable-product: 
@@ -245,6 +245,6 @@ steps:
     data:
       deploymentURL: '%actions.pagesUrl.data.html_url%'
       forkURL: '%payload.repository.html_url%/fork'
-      downloadURL: '%payload.repository.html_url%/archive/master.zip'
+      downloadURL: '%payload.repository.html_url%/archive/main.zip'
 
 
